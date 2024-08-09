@@ -100,13 +100,7 @@ form label {
   font-size: 1.5rem;
   font-weight: 400;
 }
-.tv-section,
-.ver-section,
-.descargando-section,
-.preguntas-section,
-.footer {
-  border-top: 5px solid #232323;
-}
+
 .preguntas-section h3 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -206,18 +200,26 @@ footer .flecha {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .video-frame {
   position: absolute;
-  top: 1%;
+  top: 12%;
   left: 22%;
   width: 56%;
-  height: 50%;
+  height: 40%;
   object-fit: cover;
 }
 
+/* linea entre secciones */
+.tv-section,
+.ver-section,
+.descargando-section,
+.creando-section,
+.preguntas-section,
+.footer {
+  border-top: 5px solid #232323;
+}
 /* mobile */
 @media only screen and (max-width: 992px) {
   nav img {
