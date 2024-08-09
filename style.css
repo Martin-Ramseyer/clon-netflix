@@ -1,0 +1,269 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #fff;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/fondo-header.jpg);
+  background-size: cover;
+  background-position: 50%;
+  height: 90vh;
+}
+/* navbar */
+nav img {
+  width: 13%;
+}
+.red-btn {
+  background: rgb(229, 9, 20);
+  color: #fff;
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 5px 17px;
+}
+.red-btn:hover {
+  background: rgb(193, 17, 25);
+}
+.dropdown .btn {
+  margin-right: 25px;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.35rem 1rem;
+}
+/* comenzar section */
+.comenzar-section-title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.comenzar-section-first-p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.comenzar-section-second-p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+form {
+  width: 60%;
+}
+form #input-email {
+  color: #fff;
+}
+form .form-control:focus {
+  border-color: #fff;
+  box-shadow: none;
+  border-width: medium;
+}
+form .form-floating > .form-control:focus ~ label {
+  color: rgba(255, 255, 255, 0.7);
+}
+form .form-floating > .form-control:focus ~ label::after {
+  background-color: transparent;
+}
+form .form-floating {
+  width: 50%;
+}
+form #input-email {
+  background: transparent;
+}
+form label {
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 10px;
+}
+.comenzar-btn {
+  height: 60px;
+  font-size: 1.5rem;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.comenzar-btn::after {
+  content: "\276F";
+  margin-left: 5px;
+}
+/* tv section */
+.section-title {
+  font-size: 2.7rem;
+  font-weight: 900;
+}
+.section-paragraph {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.tv-section,
+.ver-section,
+.descargando-section,
+.preguntas-section,
+.footer {
+  border-top: 5px solid #232323;
+}
+.preguntas-section h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+.preguntas-section p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.preguntas-section button {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+.preguntas-section .accordion {
+  --bs-accordion-color: rgb(255, 255, 255);
+  --bs-accordion-bg: rgb(45, 45, 45);
+  --bs-accordion-border-color: none;
+  --bs-accordion-border-radius: none;
+}
+.preguntas-section .accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.preguntas-section .accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+.preguntas-section .accordion-button:hover {
+  background-color: rgb(65, 65, 65);
+}
+.preguntas-section .accordion-button:not(.collapsed) {
+  background-color: rgb(65, 65, 65);
+  color: rgb(255, 255, 255);
+}
+.preguntas-section .accordion-button::after {
+  content: "+";
+  background-image: none;
+  position: absolute;
+  height: 30px;
+  font-size: 50px;
+  top: 5px;
+  right: 45px;
+}
+.preguntas-section .accordion-button:not(.collapsed)::after {
+  background-image: none;
+  transform: none;
+  content: "\00d7";
+}
+
+footer p,
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+footer ul {
+  padding-left: 0;
+}
+footer li {
+  list-style-type: none;
+}
+footer select {
+  background: transparent;
+  color: #fff;
+  padding-left: 40px;
+  padding-right: 40px;
+  appearance: none;
+  border-radius: 5px;
+}
+footer img {
+  filter: invert();
+  top: 8px;
+  left: 12px;
+}
+footer .flecha {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  top: 15px;
+  right: -115px;
+}
+
+/* Estilos para el video dentro del marco mac */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.video-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-frame {
+  position: absolute;
+  top: 1%;
+  left: 22%;
+  width: 56%;
+  height: 50%;
+  object-fit: cover;
+}
+
+/* mobile */
+@media only screen and (max-width: 992px) {
+  nav img {
+    width: 17%;
+  }
+  .comenzar-title,
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .comenzar-first-p,
+  .comenzar-second-p,
+  .section-paragraph,
+  .preguntas-section h3 {
+    font-size: 1.125rem;
+  }
+  .tv-section .container {
+    padding-top: 5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav img {
+    width: 25%;
+  }
+  header {
+    height: 100vh;
+  }
+  .container-md {
+    background: radial-gradient(
+      120.35% 220% at 49.86% -6.29%,
+      #e50914 0%,
+      #0e1b4f 46.15%,
+      #0d1121 100%
+    );
+    padding-top: 4rem;
+    margin: 0 24px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  nav img {
+    width: 35%;
+  }
+  header {
+    height: 110vh;
+  }
+  form .form-floating {
+    width: 90%;
+  }
+}
