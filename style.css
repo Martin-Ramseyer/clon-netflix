@@ -187,6 +187,30 @@ footer .flecha {
   right: -115px;
 }
 
+/* Estilos para el video dentro del marco tv */
+.video-container-tv {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.video-container-tv img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-frame-tv {
+  position: absolute;
+  top: 21%;
+  left: 13%;
+  width: 73%;
+  height: 55%;
+  object-fit: cover;
+}
+
 /* Estilos para el video dentro del marco mac */
 .video-container {
   position: relative;
@@ -204,10 +228,10 @@ footer .flecha {
 
 .video-frame {
   position: absolute;
-  top: 12%;
-  left: 22%;
-  width: 56%;
-  height: 40%;
+  top: 11%;
+  left: 19%;
+  width: 61%;
+  height: 41%;
   object-fit: cover;
 }
 
